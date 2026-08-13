@@ -10,9 +10,8 @@ local_backend: true
 publish_mode: simple
 media_folder: public/images/uploads
 public_folder: /images/uploads
-site_url: https://example.github.io/wccl-systems/
-display_url: https://example.github.io/wccl-systems/
-logo_url: /images/wccl-admin-logo.png
+site_url: https://micahsharky.github.io/wccl-systems/
+display_url: https://micahsharky.github.io/wccl-systems/
 
 collections:
   - name: pages

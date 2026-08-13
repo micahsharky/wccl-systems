@@ -17,4 +17,4 @@ The current photos and contact details are placeholders intended to be replaced 
 
 ## Content management
 
-Editors use the site’s `/admin/` page to update text, services, projects, contact details, and images. Decap CMS saves the content behind the scenes and the site redeploys automatically. Authentication is invite-only, so editors do not need repository access or to work in the GitHub interface.
+Editors use the site’s `/admin/` page to update text, services, projects, contact details, and images. Decap CMS saves the content behind the scenes and the site redeploys automatically. Authentication is invite-only, so editors do not need repository access or to work in the GitHub interface. The `/admin/` address forwards to the authentication-only Netlify editor; the public website remains on GitHub Pages.

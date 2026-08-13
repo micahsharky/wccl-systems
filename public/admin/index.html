@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="noindex" />
     <title>WCCL Systems — Content Admin</title>
+    <script>
+      // Git Gateway lives on the authentication-only Netlify project. Keep
+      // the convenient GitHub Pages /admin/ URL, but send editors to the
+      // secure editor origin before Decap starts.
+      if (location.hostname.endsWith("github.io")) {
+        location.replace("https://wccl-systems-auth.netlify.app/admin/");
+      }
+    </script>
     <style>
       body{margin:0;background:#eef1f5;font-family:system-ui,sans-serif}
       .cms-loading{min-height:100vh;display:grid;place-items:center;color:#071f49;font-weight:700;letter-spacing:.05em}
@@ -14,7 +22,6 @@
   <body>
     <div class="cms-loading">Loading WCCL Systems Admin…</div>
     <script>
-      // GitHub is the hidden content store; the public site stays on GitHub Pages.
       window.WCCL_IDENTITY_URL = "https://wccl-systems-auth.netlify.app/.netlify/identity";
       if (window.netlifyIdentity) {
         window.netlifyIdentity.init({ APIUrl: window.WCCL_IDENTITY_URL });

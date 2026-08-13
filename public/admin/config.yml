@@ -10,7 +10,7 @@ local_backend: true
 publish_mode: simple
 media_folder: public/images/uploads
 public_folder: /images/uploads
-site_url: https://micahsharky.github.io/wccl-systems/
+site_url: https://wccl-systems-auth.netlify.app/
 display_url: https://micahsharky.github.io/wccl-systems/
 
 collections:

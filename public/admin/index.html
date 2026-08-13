@@ -9,15 +9,18 @@
       // Git Gateway lives on the authentication-only Netlify project. Keep
       // the convenient GitHub Pages /admin/ URL, but send editors to the
       // secure editor origin before Decap starts.
-      if (location.hostname.endsWith("github.io")) {
-        location.replace("https://wccl-systems-auth.netlify.app/admin/");
+      if (
+        location.hostname !== "admin.wcclsystems.com" &&
+        location.hostname !== "wccl-systems-auth.netlify.app"
+      ) {
+        location.replace("https://admin.wcclsystems.com/admin/");
       }
     </script>
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body>
     <script>
-      window.WCCL_IDENTITY_URL = "https://wccl-systems-auth.netlify.app/.netlify/identity";
+      window.WCCL_IDENTITY_URL = "https://admin.wcclsystems.com/.netlify/identity";
       if (window.netlifyIdentity) {
         window.netlifyIdentity.init({ APIUrl: window.WCCL_IDENTITY_URL });
       }

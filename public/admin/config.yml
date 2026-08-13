@@ -1,0 +1,102 @@
+backend:
+  name: git-gateway
+  branch: main
+  commit_messages:
+    update: "content: update {{collection}} {{slug}}"
+    uploadMedia: "content: upload {{path}}"
+    deleteMedia: "content: remove {{path}}"
+
+local_backend: true
+publish_mode: simple
+media_folder: public/images/uploads
+public_folder: /images/uploads
+site_url: https://example.github.io/wccl-systems/
+display_url: https://example.github.io/wccl-systems/
+logo_url: /images/wccl-admin-logo.png
+
+collections:
+  - name: pages
+    label: Website
+    files:
+      - name: homepage
+        label: Homepage
+        file: src/data/site.json
+        format: json
+        fields:
+          - { label: Announcement Bar, name: announcement, widget: string }
+          - { label: Display Phone Number, name: phone, widget: string }
+          - { label: Phone Link, name: phoneLink, widget: string, hint: "Include country code, for example +12535551234" }
+          - { label: Project Email, name: email, widget: string }
+          - label: Hero
+            name: hero
+            widget: object
+            fields:
+              - { label: Small Heading, name: eyebrow, widget: string }
+              - { label: Main Headline, name: headline, widget: text, hint: "Put each large line on a separate line" }
+              - { label: Background Image, name: image, widget: image, choose_url: true }
+          - label: Feature Strip
+            name: feature
+            widget: object
+            fields:
+              - { label: Headline, name: headline, widget: string }
+              - { label: Text, name: text, widget: text }
+          - label: Introduction
+            name: intro
+            widget: object
+            fields:
+              - { label: Small Heading, name: eyebrow, widget: string }
+              - { label: Headline, name: headline, widget: text }
+              - label: Paragraphs
+                name: paragraphs
+                widget: list
+                min: 1
+                max: 3
+                field: { label: Paragraph, name: paragraph, widget: text }
+          - label: Services
+            name: services
+            widget: list
+            min: 3
+            max: 6
+            summary: "{{fields.title}}"
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Description, name: text, widget: text }
+              - { label: Image, name: image, widget: image, choose_url: true }
+          - label: Why WCCL
+            name: why
+            widget: object
+            fields:
+              - { label: Small Heading, name: eyebrow, widget: string }
+              - { label: Headline, name: headline, widget: text }
+              - { label: Text, name: text, widget: text }
+              - { label: Image, name: image, widget: image, choose_url: true }
+              - label: Key Points
+                name: points
+                widget: list
+                min: 1
+                max: 5
+                field: { label: Point, name: point, widget: string }
+          - label: Featured Projects
+            name: projects
+            widget: list
+            min: 1
+            max: 6
+            summary: "{{fields.title}}"
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Project Type, name: type, widget: string }
+              - { label: Image, name: image, widget: image, choose_url: true }
+          - label: Contact Section
+            name: contact
+            widget: object
+            fields:
+              - { label: Small Heading, name: eyebrow, widget: string }
+              - { label: Headline, name: headline, widget: string }
+              - { label: Text, name: text, widget: text }
+              - { label: Background Image, name: image, widget: image, choose_url: true }
+          - label: Address
+            name: address
+            widget: object
+            fields:
+              - { label: Street Address, name: line1, widget: string }
+              - { label: "City, State, ZIP", name: line2, widget: string }

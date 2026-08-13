@@ -1,0 +1,37 @@
+{
+  "announcement": "WCCL Systems — connected expertise for complex environments",
+  "phone": "(000) 000-0000",
+  "phoneLink": "+10000000000",
+  "email": "projects@example.com",
+  "hero": { "eyebrow": "Welcome to WCCL Systems", "headline": "Knowledge.\nIntegration.\nPerformance.", "image": "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=2200&q=88" },
+  "feature": { "headline": "Systems that work as one.", "text": "From strategy through field deployment, WCCL Systems brings the people, technology, and practical experience to deliver with confidence." },
+  "intro": {
+    "eyebrow": "Built for the real world",
+    "headline": "Leaders in Integrated Systems, Infrastructure, Controls, and Lifecycle Support",
+    "paragraphs": [
+      "Knowledge and experience are the foundation of every solution we deliver. From complex facilities and critical infrastructure to multi-site operations, our team works alongside owners, contractors, and operators to solve challenges clearly and responsibly.",
+      "Clients depend on WCCL Systems for enduring quality, disciplined execution, and practical problem-solving—from the first conversation to long-term support."
+    ]
+  },
+  "services": [
+    { "title": "Systems Integration", "text": "Purpose-built technology systems designed around how your teams and facilities actually operate.", "image": "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=900&q=82" },
+    { "title": "Infrastructure", "text": "Dependable network, power, and control infrastructure built for demanding environments.", "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=900&q=82" },
+    { "title": "Automation & Controls", "text": "Connected control systems that turn complex operations into clear, repeatable workflows.", "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=82" },
+    { "title": "Field Services", "text": "Responsive installation, commissioning, and on-site support from experienced specialists.", "image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=900&q=82" },
+    { "title": "Lifecycle Support", "text": "Preventive maintenance and modernization that keep critical systems performing over time.", "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=900&q=82" }
+  ],
+  "why": {
+    "eyebrow": "Why WCCL Systems?",
+    "headline": "Accountability from concept to completion.",
+    "text": "Our success comes from taking ownership of difficult problems and building solutions that perform safely, reliably, and over the long haul.",
+    "image": "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=1300&q=86",
+    "points": ["Experienced, safety-minded teams", "Clear communication and documentation", "Quality-driven installation and support"]
+  },
+  "projects": [
+    { "title": "Regional Operations Center", "type": "Integrated Systems", "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=84" },
+    { "title": "Advanced Manufacturing Campus", "type": "Automation & Controls", "image": "https://images.unsplash.com/photo-1565793298595-6a879b1d9492?auto=format&fit=crop&w=1000&q=84" },
+    { "title": "Critical Infrastructure Upgrade", "type": "Infrastructure", "image": "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1000&q=84" }
+  ],
+  "contact": { "eyebrow": "Get in touch", "headline": "Let’s build a better system.", "text": "Tell us a little about your project. We’ll connect you with the right WCCL Systems specialist.", "image": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=2200&q=84" },
+  "address": { "line1": "1234 Business Park Drive", "line2": "Your City, ST 00000" }
+}

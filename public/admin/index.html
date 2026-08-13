@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>WCCL Systems — Content Admin</title>
+    <style>
+      body{margin:0;background:#eef1f5;font-family:system-ui,sans-serif}
+      .cms-loading{min-height:100vh;display:grid;place-items:center;color:#071f49;font-weight:700;letter-spacing:.05em}
+    </style>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  </head>
+  <body>
+    <div class="cms-loading">Loading WCCL Systems Admin…</div>
+    <script>
+      // Replace this with the Netlify Identity endpoint after the small,
+      // authentication-only Netlify site is created. GitHub remains the
+      // hidden content store; the public site stays on GitHub Pages.
+      window.WCCL_IDENTITY_URL = "https://YOUR-NETLIFY-SITE.netlify.app/.netlify/identity";
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.init({ APIUrl: window.WCCL_IDENTITY_URL });
+      }
+    </script>
+    <script src="https://unpkg.com/decap-cms@^3.8.0/dist/decap-cms.js"></script>
+  </body>
+</html>

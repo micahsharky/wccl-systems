@@ -13,14 +13,9 @@
         location.replace("https://wccl-systems-auth.netlify.app/admin/");
       }
     </script>
-    <style>
-      body{margin:0;background:#eef1f5;font-family:system-ui,sans-serif}
-      .cms-loading{min-height:100vh;display:grid;place-items:center;color:#071f49;font-weight:700;letter-spacing:.05em}
-    </style>
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body>
-    <div class="cms-loading">Loading WCCL Systems Admin…</div>
     <script>
       window.WCCL_IDENTITY_URL = "https://wccl-systems-auth.netlify.app/.netlify/identity";
       if (window.netlifyIdentity) {

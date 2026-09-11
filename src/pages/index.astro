@@ -16,6 +16,14 @@ const contactStyle = `background-image: url('${assetUrl(site.contact.image)}')`;
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content="WCCL Systems delivers integrated technology, infrastructure, controls, and lifecycle support." />
     <title>WCCL Systems | Integrated Solutions Built to Last</title>
+    <script is:inline>
+      // Netlify Identity sends recovery, confirmation, and invitation links to
+      // the site's root. The Identity widget lives at /admin/, so preserve the
+      // token while routing those callbacks to the CMS login page.
+      if (location.hash && /(?:recovery|invite|confirmation|email_change)_token=/.test(location.hash)) {
+        location.replace(`/admin/${location.hash}`);
+      }
+    </script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>

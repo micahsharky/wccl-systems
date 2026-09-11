@@ -133,7 +133,7 @@ const contactStyle = `background-image: url('${assetUrl(site.contact.image)}')`;
             <p>WCCL Systems<br />{site.address.line1}<br />{site.address.line2}</p>
             <p><a href={`tel:${site.phoneLink}`}>{site.phone}</a><br /><a href={`mailto:${site.email}`}>{site.email}</a></p>
           </div>
-          <form class="quote-form" action={`mailto:${site.email}`} method="post" enctype="text/plain">
+          <form class="quote-form" id="quote-form" data-recipient={site.email}>
             <div class="field"><label for="project">Project Name</label><input id="project" name="Project Name" required placeholder="Project Name" /></div>
             <div class="field"><label for="location">Project Location</label><input id="location" name="Project Location" required placeholder="City, State, ZIP" /></div>
             <div class="field"><label for="company">Company Name</label><input id="company" name="Company Name" placeholder="Company Name" /></div>
@@ -175,6 +175,27 @@ const contactStyle = `background-image: url('${assetUrl(site.contact.image)}')`;
         toggle?.setAttribute('aria-expanded', 'false');
         nav.classList.remove('is-open');
       }));
+      const quoteForm = document.querySelector('#quote-form');
+      quoteForm?.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const form = event.currentTarget;
+        if (!(form instanceof HTMLFormElement)) return;
+        const values = new FormData(form);
+        const project = String(values.get('Project Name') || '');
+        const subject = `Project inquiry: ${project}`;
+        const body = [
+          `Project Name: ${project}`,
+          `Project Location: ${values.get('Project Location') || ''}`,
+          `Company Name: ${values.get('Company Name') || ''}`,
+          `Phone: ${values.get('Phone') || ''}`,
+          `Email: ${values.get('Email') || ''}`,
+          '',
+          'Brief Scope of Project:',
+          String(values.get('Project Scope') || '')
+        ].join('\\n');
+        const recipient = form.dataset.recipient || '';
+        window.location.href = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      });
     </script>
   </body>
 </html>

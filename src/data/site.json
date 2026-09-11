@@ -28,6 +28,26 @@
     { "title": "HDPE Welding", "text": "HDPE fusion and welding services for durable, corrosion-resistant piping, liners, and related systems.", "image": "https://images.unsplash.com/photo-1716031112197-db7e3e1e232e?auto=format&fit=crop&w=900&q=82" },
     { "title": "PVC Welding", "text": "PVC welding and fabrication support for applications requiring corrosion-resistant polymer components.", "image": "https://images.unsplash.com/photo-1764524331704-c7a0d17067dd?auto=format&fit=crop&w=900&q=82" }
   ],
+  "gallery": [
+    { "image": "/images/wccl/img_2825.jpg", "alt": "Coated concrete structure with access ladder" },
+    { "image": "/images/wccl/img_2832.jpg", "alt": "Interior of a lined concrete structure" },
+    { "image": "/images/wccl/img_2922.jpg", "alt": "Lined concrete tunnel with pipe" },
+    { "image": "/images/wccl/img_3493.jpg", "alt": "Small coated concrete vault" },
+    { "image": "/images/wccl/img_3651.jpg", "alt": "Concrete wet well interior" },
+    { "image": "/images/wccl/img_3679.jpg", "alt": "Concrete access structure" },
+    { "image": "/images/wccl/img_3724.jpg", "alt": "Lined utility structure" },
+    { "image": "/images/wccl/img_3832-2.jpg", "alt": "Coated concrete access vault" },
+    { "image": "/images/wccl/img_3832.jpg", "alt": "Coated concrete access vault detail" },
+    { "image": "/images/wccl/img_3928.jpg", "alt": "Concrete shaft with ladder access" },
+    { "image": "/images/wccl/img_3958.jpg", "alt": "Interior infrastructure inspection" },
+    { "image": "/images/wccl/img_5059.jpg", "alt": "White-coated tank structure" },
+    { "image": "/images/wccl/img_5061.jpg", "alt": "Waterproofed concrete tank" },
+    { "image": "/images/wccl/img_5062.jpg", "alt": "Coated tank roof and access hatch" },
+    { "image": "/images/wccl/img_6606.jpg", "alt": "Industrial concrete structure" },
+    { "image": "/images/wccl/img_6637.jpg", "alt": "Concrete rehabilitation work area" },
+    { "image": "/images/wccl/img_7560.jpg", "alt": "Confined-space concrete structure" },
+    { "image": "/images/wccl/img_9946.jpg", "alt": "Large lined infrastructure shaft" }
+  ],
   "why": {
     "eyebrow": "Our Approach",
     "headline": "Quality, safety, and dependable execution.",

@@ -2,7 +2,7 @@
 import "../styles/global.css";
 import site from "../data/site.json";
 
-const { services } = site;
+const { services, gallery } = site;
 const assetUrl = (path: string) => path.startsWith("http") ? path : `${import.meta.env.BASE_URL}${path.replace(/^\//, "")}`;
 const heroStyle = `background-image: url('${assetUrl(site.hero.image)}')`;
 const whyStyle = `background-image: url('${assetUrl(site.why.image)}')`;
@@ -89,6 +89,18 @@ const contactStyle = `background-image: url('${assetUrl(site.contact.image)}')`;
               </div>
             </article>
           ))}
+        </div>
+      </section>
+
+      <section class="field-gallery section-pad">
+        <div class="container">
+          <div class="section-heading-row">
+            <div><p class="eyebrow">In the field</p><h2>Work built to last.</h2></div>
+            <p class="gallery-intro">A look at the concrete structures, tanks, shafts, and lined systems our crews work on every day.</p>
+          </div>
+          <div class="field-gallery-grid">
+            {gallery.map((item) => <figure><img src={assetUrl(item.image)} alt={item.alt} loading="lazy" /></figure>)}
+          </div>
         </div>
       </section>
 

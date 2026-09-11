@@ -8,8 +8,8 @@ backend:
 
 local_backend: true
 publish_mode: simple
-media_folder: public/images/uploads
-public_folder: /images/uploads
+media_folder: public/images
+public_folder: /images
 site_url: https://admin.wcclsystems.com/
 display_url: https://wcclsystems.com/
 
@@ -26,6 +26,10 @@ collections:
           - { label: Display Phone Number, name: phone, widget: string }
           - { label: Phone Link, name: phoneLink, widget: string, hint: "Include country code, for example +12535551234" }
           - { label: Project Email, name: email, widget: string }
+          - { label: LinkedIn URL, name: linkedin, widget: string, required: false }
+          - { label: Facebook URL, name: facebook, widget: string, required: false }
+          - { label: WA L&I Record URL, name: lni, widget: string, required: false }
+          - { label: WA L&I UBI, name: ubi, widget: string, required: false }
           - label: Hero
             name: hero
             widget: object

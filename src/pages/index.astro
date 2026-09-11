@@ -116,15 +116,11 @@ const contactStyle = `background-image: url('${assetUrl(site.contact.image)}')`;
             <p>{site.contact.text}</p>
             <p class="contact-phone">Call us<br /><a href={`tel:${site.phoneLink}`}>{site.phone}</a></p>
           </div>
-          <form class="quote-form" action={`mailto:${site.email}`} method="post" enctype="text/plain">
-            <div class="field"><label for="project">Project Name</label><input id="project" name="project" required placeholder="Project Name" /></div>
-            <div class="field"><label for="location">Project Location</label><input id="location" name="location" required placeholder="City, State, ZIP" /></div>
-            <div class="field"><label for="company">Company Name</label><input id="company" name="company" placeholder="Company Name" /></div>
-            <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" placeholder="Phone" /></div>
-            <div class="field full"><label for="email">Email</label><input id="email" name="email" type="email" required placeholder="Email Address" /></div>
-            <div class="field full"><label for="scope">Brief Scope of Project</label><textarea id="scope" name="scope" required rows="4" placeholder="How can we help?"></textarea></div>
-            <button class="button button-white" type="submit">Send Inquiry <span aria-hidden="true">→</span></button>
-          </form>
+          <div class="contact-details">
+            <p class="eyebrow light">Contact details</p>
+            <p>WCCL Systems<br />{site.address.line1}<br />{site.address.line2}</p>
+            <p><a href={`tel:${site.phoneLink}`}>{site.phone}</a><br /><a href={`mailto:${site.email}`}>{site.email}</a></p>
+          </div>
         </div>
       </section>
 

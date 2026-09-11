@@ -138,7 +138,6 @@ const contactStyle = `background-image: url('${assetUrl(site.contact.image)}')`;
             <div class="field"><label for="location">Project Location</label><input id="location" name="Project Location" required placeholder="City, State, ZIP" /></div>
             <div class="field"><label for="company">Company Name</label><input id="company" name="Company Name" placeholder="Company Name" /></div>
             <div class="field"><label for="phone">Phone</label><input id="phone" name="Phone" type="tel" placeholder="Phone" /></div>
-            <div class="field full"><label for="sender-email">Email</label><input id="sender-email" name="Email" type="email" required placeholder="Email Address" /></div>
             <div class="field full"><label for="scope">Brief Scope of Project</label><textarea id="scope" name="Project Scope" required rows="4" placeholder="How can we help?"></textarea></div>
             <button class="button button-white" type="submit">Open Email <span aria-hidden="true">→</span></button>
           </form>
@@ -188,7 +187,6 @@ const contactStyle = `background-image: url('${assetUrl(site.contact.image)}')`;
           `Project Location: ${values.get('Project Location') || ''}`,
           `Company Name: ${values.get('Company Name') || ''}`,
           `Phone: ${values.get('Phone') || ''}`,
-          `Email: ${values.get('Email') || ''}`,
           '',
           'Brief Scope of Project:',
           String(values.get('Project Scope') || '')

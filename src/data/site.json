@@ -35,11 +35,6 @@
     "image": "https://images.unsplash.com/photo-1774931363306-5a896cd4dd02?auto=format&fit=crop&w=1300&q=86",
     "points": ["Safety and responsible field operations", "Quality workmanship and preparation", "Clear communication and documentation", "Coordination with project schedules", "Long-term asset performance"]
   },
-  "projects": [
-    { "title": "Municipal Infrastructure", "type": "Public Infrastructure", "image": "https://images.unsplash.com/photo-1622322977767-2c71d1787205?auto=format&fit=crop&w=1000&q=84" },
-    { "title": "Water & Wastewater Facilities", "type": "Water Infrastructure", "image": "https://images.unsplash.com/photo-1774789599304-cca1e1ffbb95?auto=format&fit=crop&w=1000&q=84" },
-    { "title": "Industrial & Utility Systems", "type": "Critical Infrastructure", "image": "https://images.unsplash.com/photo-1716031112197-db7e3e1e232e?auto=format&fit=crop&w=1000&q=84" }
-  ],
   "contact": {
     "eyebrow": "Contact WCCL Systems",
     "headline": "Let's talk about your project.",

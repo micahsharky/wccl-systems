@@ -75,16 +75,6 @@ collections:
                 min: 1
                 max: 5
                 field: { label: Point, name: point, widget: string }
-          - label: Featured Projects
-            name: projects
-            widget: list
-            min: 1
-            max: 6
-            summary: "{{fields.title}}"
-            fields:
-              - { label: Title, name: title, widget: string }
-              - { label: Project Type, name: type, widget: string }
-              - { label: Image, name: image, widget: image, choose_url: true }
           - label: Contact Section
             name: contact
             widget: object

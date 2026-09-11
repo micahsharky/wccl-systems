@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WCCL Systems — Set your password</title>
+    <style>
+      body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #102c2d; color: #fff; font: 16px/1.5 system-ui, sans-serif; }
+      main { width: min(92vw, 460px); text-align: center; }
+      h1 { margin-bottom: .5rem; font-size: 2rem; }
+      p { color: #d4e2de; }
+      #status { margin-top: 2rem; }
+    </style>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  </head>
+  <body>
+    <main>
+      <h1>Set your WCCL Systems password</h1>
+      <p>Use the form that opens to create your password. You can then return to the admin page and sign in normally.</p>
+      <p id="status">Opening password recovery…</p>
+    </main>
+    <script>
+      window.netlifyIdentity.init({ APIUrl: "https://admin.wcclsystems.com/.netlify/identity" });
+      window.netlifyIdentity.on("init", function () {
+        window.netlifyIdentity.open();
+        document.querySelector("#status").textContent = "Complete the password form to finish.";
+      });
+      window.netlifyIdentity.on("login", function () {
+        window.location.replace("/admin/");
+      });
+    </script>
+  </body>
+</html>

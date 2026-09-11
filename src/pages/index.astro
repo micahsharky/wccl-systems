@@ -21,7 +21,7 @@ const contactStyle = `background-image: url('${assetUrl(site.contact.image)}')`;
       // the site's root. The Identity widget lives at /admin/, so preserve the
       // token while routing those callbacks to the CMS login page.
       if (location.hash && /(?:recovery|invite|confirmation|email_change)_token=/.test(location.hash)) {
-        location.replace(`/admin/${location.hash}`);
+        location.replace(`/admin/recovery.html${location.hash}`);
       }
     </script>
   </head>

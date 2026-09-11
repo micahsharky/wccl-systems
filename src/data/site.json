@@ -1,7 +1,7 @@
 {
   "announcement": "West Coast Concrete Lining — Concrete Rehabilitation • Lining • Waterproofing • Repair",
-  "phone": "[INSERT PHONE NUMBER]",
-  "phoneLink": "+10000000000",
+  "phone": "253-219-5554",
+  "phoneLink": "+12532195554",
   "email": "wcclsystems@outlook.com",
   "hero": {
     "eyebrow": "West Coast Concrete Lining",
@@ -41,5 +41,5 @@
     "text": "Planning a concrete rehabilitation, lining, waterproofing, inspection, HDPE, or PVC welding project? Contact WCCL Systems to discuss your scope, site conditions, schedule, and project requirements.",
     "image": "https://images.unsplash.com/photo-1622322977767-2c71d1787205?auto=format&fit=crop&w=2200&q=84"
   },
-  "address": { "line1": "[INSERT BUSINESS ADDRESS]", "line2": "" }
+  "address": { "line1": "4008 Elwood Drive", "line2": "University Place, WA 98366" }
 }

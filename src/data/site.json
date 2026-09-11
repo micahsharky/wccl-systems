@@ -21,9 +21,9 @@
     ]
   },
   "services": [
-    { "title": "Concrete Lining", "text": "Protective lining systems designed for structures exposed to water, chemicals, abrasion, and demanding service conditions.", "image": "https://images.unsplash.com/photo-1782116525884-0a7c98c214e4?auto=format&fit=crop&w=900&q=82" },
-    { "title": "Concrete Waterproofing", "text": "Solutions designed to control water intrusion and protect concrete from long-term moisture exposure.", "image": "https://images.unsplash.com/photo-1783708794415-0268e89b4690?auto=format&fit=crop&w=900&q=82" },
-    { "title": "Concrete Structure Repair", "text": "Rehabilitation and repair of damaged or deteriorated concrete to restore performance and extend service life.", "image": "https://images.unsplash.com/photo-1773432114474-c1afba22a339?auto=format&fit=crop&w=900&q=82" },
+    { "title": "Concrete Lining", "text": "Protective lining systems designed for structures exposed to water, chemicals, abrasion, and demanding service conditions.", "image": "/images/wccl/img_2922.jpg" },
+    { "title": "Concrete Waterproofing", "text": "Solutions designed to control water intrusion and protect concrete from long-term moisture exposure.", "image": "/images/wccl/img_5061.jpg" },
+    { "title": "Concrete Structure Repair", "text": "Rehabilitation and repair of damaged or deteriorated concrete to restore performance and extend service life.", "image": "/images/wccl/img_6637.jpg" },
     { "title": "Inspection Services", "text": "Condition assessments and inspection support to document existing conditions and help determine appropriate rehabilitation.", "image": "https://images.unsplash.com/photo-1777919393730-463e2c0b7f4c?auto=format&fit=crop&w=900&q=82" },
     { "title": "HDPE Welding", "text": "HDPE fusion and welding services for durable, corrosion-resistant piping, liners, and related systems.", "image": "https://images.unsplash.com/photo-1716031112197-db7e3e1e232e?auto=format&fit=crop&w=900&q=82" },
     { "title": "PVC Welding", "text": "PVC welding and fabrication support for applications requiring corrosion-resistant polymer components.", "image": "https://images.unsplash.com/photo-1764524331704-c7a0d17067dd?auto=format&fit=crop&w=900&q=82" }
@@ -52,7 +52,7 @@
     "eyebrow": "Our Approach",
     "headline": "Quality, safety, and dependable execution.",
     "text": "WCCL Systems evaluates existing conditions, coordinates closely with owners and project teams, and builds practical solutions around long-term infrastructure performance.",
-    "image": "https://images.unsplash.com/photo-1673978484091-6a743a9058cf?auto=format&fit=crop&w=1300&q=86",
+    "image": "/images/wccl/img_6606.jpg",
     "points": ["Safety and responsible field operations", "Quality workmanship and preparation", "Clear communication and documentation", "Coordination with project schedules", "Long-term asset performance"]
   },
   "contact": {

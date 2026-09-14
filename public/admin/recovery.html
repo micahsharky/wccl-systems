@@ -22,8 +22,11 @@
     <script>
       window.netlifyIdentity.init({ APIUrl: "https://admin.wcclsystems.com/.netlify/identity" });
       window.netlifyIdentity.on("init", function () {
-        window.netlifyIdentity.open();
-        document.querySelector("#status").textContent = "Complete the password form to finish.";
+        const hasRecoveryToken = /(?:#|&)recovery_token=/.test(window.location.hash);
+        if (!hasRecoveryToken) window.netlifyIdentity.open("login");
+        document.querySelector("#status").textContent = hasRecoveryToken
+          ? "Complete the password form to finish."
+          : "Open a password-reset link from your email to continue.";
       });
       window.netlifyIdentity.on("login", function () {
         window.location.replace("/admin/");

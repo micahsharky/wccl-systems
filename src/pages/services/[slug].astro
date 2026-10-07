@@ -1,0 +1,52 @@
+---
+import "../../styles/global.css";
+import site from "../../data/site.json";
+
+const { slug } = Astro.params;
+const slugify = (title: string) => title.toLowerCase().replace(/&/g, "and").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+export function getStaticPaths() {
+  const makeSlug = (title: string) => title.toLowerCase().replace(/&/g, "and").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+  return site.services.map((service) => ({ params: { slug: makeSlug(service.title) } }));
+}
+const service = site.services.find((item) => slugify(item.title) === slug);
+if (!service) Astro.redirect("/");
+const assetUrl = (path: string) => path.startsWith("http") ? path : `${import.meta.env.BASE_URL}${path.replace(/^\//, "")}`;
+const details: Record<string, string> = {
+  "Concrete Lining": "Protective lining systems help shield concrete structures from water, chemicals, abrasion, corrosion, and continuous service demands. We coordinate surface preparation, application, inspection, and project documentation around the requirements of each structure.",
+  "Concrete Waterproofing": "Our waterproofing work helps control water intrusion and protect concrete from moisture-related deterioration. We evaluate site conditions and select practical systems for tanks, vaults, wet wells, and other critical infrastructure.",
+  "Concrete Structure Repair": "We repair and rehabilitate damaged or deteriorated concrete to restore function and extend service life. Our approach addresses the cause and extent of deterioration while coordinating safely with active facilities and project schedules.",
+  "Inspection Services": "Condition assessments and inspection support document existing conditions and help owners make informed rehabilitation decisions. We provide clear field observations, photographic documentation, and practical next-step recommendations.",
+  "HDPE Welding": "HDPE fusion and welding services create durable, corrosion-resistant connections for piping, liners, and related systems. Our field-focused work is planned around fit-up, access, quality control, and long-term performance.",
+  "PVC Welding": "PVC welding and fabrication support corrosion-resistant polymer components used in demanding environments. We help coordinate material preparation, fit-up, welding, and installation details for dependable results."
+};
+const description = details[service?.title || ""] || service?.text || "";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={`${service?.title} services from WCCL Systems.`} />
+    <title>{service?.title} | WCCL Systems</title>
+    <style>
+      .service-page { min-height: 100vh; background: #f3f0e9; }
+      .service-hero { min-height: 58vh; display: grid; align-items: end; padding: 8rem 0 4rem; color: #fff; background-position: center; background-size: cover; }
+      .service-hero h1 { max-width: 780px; margin: .5rem 0 0; font-size: clamp(2.8rem, 7vw, 6.5rem); line-height: .95; }
+      .service-content { max-width: 820px; padding: 5rem 1.5rem 6rem; }
+      .service-content p { font-size: 1.25rem; line-height: 1.7; color: #385355; }
+      .service-actions { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 2rem; }
+      .service-actions a { display: inline-block; padding: .9rem 1.2rem; border: 1px solid #16494a; color: #16494a; text-decoration: none; }
+      .service-actions a:first-child { background: #16494a; color: #fff; }
+    </style>
+  </head>
+  <body>
+    <main class="service-page">
+      <section class="service-hero" style={"background-image: linear-gradient(90deg, rgba(12,45,47,.92), rgba(12,45,47,.45)), url('" + assetUrl(service?.image || "") + "')"}><div class="container"><a class="text-link light" href="/">← Back to WCCL Systems</a><p class="eyebrow light">WCCL Systems services</p><h1>{service?.title}</h1></div></section>
+      <section class="container service-content">
+        <p>{description}</p>
+        <div class="service-actions"><a href="/" >View all services</a><a href="/#contact">Discuss your project →</a></div>
+      </section>
+    </main>
+  </body>
+</html>

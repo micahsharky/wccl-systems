@@ -30,7 +30,8 @@
     { "title": "Concrete Structure Repair", "text": "Rehabilitation and repair of damaged or deteriorated concrete to restore performance and extend service life.", "image": "/images/wccl/img_6637.jpg" },
     { "title": "Inspection Services", "text": "Condition assessments and inspection support to document existing conditions and help determine appropriate rehabilitation.", "image": "https://images.unsplash.com/photo-1777919393730-463e2c0b7f4c?auto=format&fit=crop&w=900&q=82" },
     { "title": "HDPE Welding", "text": "HDPE fusion and welding services for durable, corrosion-resistant piping, liners, and related systems.", "image": "https://images.unsplash.com/photo-1716031112197-db7e3e1e232e?auto=format&fit=crop&w=900&q=82" },
-    { "title": "PVC Welding", "text": "PVC welding and fabrication support for applications requiring corrosion-resistant polymer components.", "image": "https://images.unsplash.com/photo-1764524331704-c7a0d17067dd?auto=format&fit=crop&w=900&q=82" }
+    { "title": "PVC Welding", "text": "PVC welding and fabrication support for applications requiring corrosion-resistant polymer components.", "image": "https://images.unsplash.com/photo-1764524331704-c7a0d17067dd?auto=format&fit=crop&w=900&q=82" },
+    { "title": "Special Civil Services", "text": "Specialized civil construction support for concrete infrastructure, utility structures, access improvements, and site conditions that require careful coordination and field execution.", "image": "/images/wccl/img_6606.jpg" }
   ],
   "gallery": [
     { "image": "/images/wccl/img_2825.jpg", "alt": "Coated concrete structure with access ladder" },

@@ -1,0 +1,38 @@
+---
+import "../styles/global.css";
+import site from "../data/site.json";
+const heroImage = "/images/wccl/img_9946.jpg";
+const paragraphs = [
+  "In the 1970s, Marc Valdes was working in the field as a sewer concrete installer when he began to recognize serious challenges facing sewer infrastructure throughout the Pacific Northwest. Problems with infiltration, poor workmanship, and limited solutions for repairing leaks in concrete structures created a need for a better approach to sewer construction and rehabilitation.",
+  "In 1980, Marc founded his company with a clear mission: to build and rehabilitate sanitary sewer infrastructure capable of withstanding the harsh environmental conditions of the Pacific Northwest. From the beginning, his approach centered on uncompromising quality control, innovative repair solutions, and an unwavering commitment to customer service.",
+  "For more than four decades, Marc has developed and delivered solutions for some of the most challenging concrete deterioration and rehabilitation projects at wastewater treatment facilities throughout the region. By collaborating with waterproofing manufacturers and suppliers, he has helped develop specialized injection and coating products designed to stop leaks, protect concrete structures, and prevent premature infrastructure failure caused by hydrogen sulfide (H₂S) gas and high groundwater conditions.",
+  "Marc’s dedication to quality workmanship, dependable solutions, and exceptional customer service has helped establish WCCL Systems as a leading concrete rehabilitation contractor in the Pacific Northwest. Having installed about 1,000,000 square feet of Raven 405, Marc continues to build on that legacy, with a commitment to delivering millions of additional square feet of rehabilitation over the next decade.",
+  "Today, Marc partners with his son, Andrew Valdes, to carry that mission forward. Andrew brings expertise in emerging technologies and a hands-on approach to customer service, working directly in the field to support clients, solve problems, and help ensure successful project outcomes.",
+  "Together, Marc and Andrew combine decades of construction experience, technical innovation, and personal customer service to serve wastewater agencies and infrastructure owners throughout the Pacific Northwest. Their shared commitment to quality, accountability, and long-term customer relationships continues to set a high standard in the wastewater rehabilitation industry.",
+  "As they look toward the future, Marc and Andrew remain committed to protecting critical infrastructure, delivering dependable rehabilitation solutions, and providing the exceptional customer service their clients deserve for decades to come."
+];
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="The Marc Valdes legacy behind WCCL Systems." />
+    <title>About Us | WCCL Systems</title>
+    <style>
+      .about-hero { min-height: 55vh; display: grid; align-items: end; padding: 8rem 0 4rem; color: #fff; background: linear-gradient(90deg, rgba(12,45,47,.93), rgba(12,45,47,.4)), url('{heroImage}') center/cover; }
+      .about-hero h1 { max-width: 900px; margin: .5rem 0 0; font-size: clamp(2.7rem, 6vw, 5.8rem); line-height: .96; }
+      .about-body { max-width: 900px; padding: 5rem 1.5rem 6rem; }
+      .about-body p { margin: 0 0 1.5rem; color: #385355; font-size: 1.16rem; line-height: 1.8; }
+      .about-body .closing { margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid #c7d3cd; font-weight: 600; color: #16494a; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="about-hero"><div class="container"><a class="text-link light" href="/">← Back to WCCL Systems</a><p class="eyebrow light">About WCCL Systems</p><h1>Marc Valdes: A Legacy of Quality, Innovation, and Customer Service</h1></div></section>
+      <section class="container about-body">
+        {paragraphs.map((paragraph, index) => <p class:list={{ closing: index === paragraphs.length - 1 }}>{paragraph}</p>)}
+      </section>
+    </main>
+  </body>
+</html>

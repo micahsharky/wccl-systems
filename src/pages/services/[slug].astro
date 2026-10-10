@@ -14,6 +14,63 @@ const assetUrl = (path: string) => path.startsWith("http") ? path : `${import.me
 const details: Record<string, string> = {
   "Concrete Lining": "Concrete lining creates a protective barrier between the host structure and the environment around it. WCCL evaluates exposure to wastewater, chemicals, moisture, abrasion, and changing service conditions; prepares the substrate; and coordinates lining application and inspection to the project requirements. WCCL provides CAS-certified applicator services for Raven 405 systems, including GU-certified manhole modifications. Proper cleaning, sound-substrate preparation, bond, thickness, and holiday control are central to long-term performance.",
   "Concrete Waterproofing": "Waterproofing is a system decision, not simply a surface treatment. We assess active leaks, hydrostatic pressure, joints, penetrations, cracks, and access constraints before recommending a practical approach for tanks, vaults, wet wells, and other concrete infrastructure. The goal is to control infiltration and exfiltration while protecting the concrete and maintaining a serviceable, inspectable interior.",
+  "Concrete Structure Repair": "Concrete repair begins with understanding why the structure deteriorated. WCCL supports condition review, removal of unsound material, repair of defects, and rehabilitation of surfaces before protective coatings or liners are installed. This includes concrete rehabilitation for grease traps and related utility structures where chemical exposure, abrasion, infiltration, and difficult access can accelerate deterioration. WCCL also provides chemical grouting for soil support and concrete structural support, coordinating injection points, access, substrate conditions, and cure requirements around the owner’s repair goals. We coordinate the repair sequence around structural needs, confined-space requirements, active facilities, access, curing, and the owner’s long-term maintenance goals.",
+  "Inspections and Testing": "A useful inspection records more than what is visible on the day of the visit. We document concrete condition, cracking, spalling, corrosion indicators, infiltration, coating or liner defects, joints, penetrations, and access limitations with photographs and organized field notes. WCCL also provides manhole vacuum testing, manhole joint testing, and sewer-line testing to help verify structure and line performance, identify potential infiltration or leakage, and support rehabilitation decisions. This information helps owners and engineers prioritize repairs, compare alternatives, and plan work around operating constraints.",
+  "HDPE Welding": "HDPE butt fusion joins prepared pipe ends by heating, aligning, pressing, and cooling them into a homogeneous connection. WCCL plans the work around material compatibility, alignment, heater and equipment setup, bead formation, cooling time, access, and visual inspection. The finished work is intended to provide a durable, corrosion-resistant connection for piping, liners, and related systems when the specified procedure is followed.",
+  "PVC Welding": "PVC fabrication and welding require controlled preparation, fit-up, joining, and inspection. WCCL supports corrosion-resistant PVC components used in demanding water and wastewater environments, coordinating the work with the specified material, joint method, geometry, curing or cooling requirements, and quality checks. We focus on clean, dependable joints and documentation that supports installation and future maintenance.",
+  "Floor, Coating, and Architectural Painting": "Floor, coating, and architectural painting systems protect surfaces, improve cleanability, and give facilities a durable, finished appearance. WCCL supports surface preparation, coating selection, application, and quality checks for concrete floors, utility structures, equipment areas, walls, and other demanding environments. We coordinate moisture, substrate condition, exposure, access, cure times, color, and finish requirements so the completed system performs as intended and fits the owner’s maintenance goals.",
+  "Manhole Channeling": "Manhole channeling restores the flow path through wastewater structures and helps protect the surrounding bench and channel surfaces. WCCL supports new channel installation, channel modification, coring and channel rehabilitation, and repair of worn or damaged flow surfaces. We coordinate geometry, elevations, tie-ins, substrate preparation, compatible repair materials, coatings, access, and curing so the rehabilitated manhole performs reliably under service conditions.",
+  "Special Civil Services": "Special Civil Services supports the field conditions that make infrastructure work successful. WCCL provides HDPE and fiberglass manhole welding, certified Predl repair services, GU-certified manhole modifications, saw cutting and new channel installation, channel modification, coring and channel rehabilitation, manhole vacuum testing, sewer-line testing, extrusion-welding testing, concrete coring under 24 inches, and concrete grouting—from a single manhole to dozens of manholes at a time. Our team also provides waterproofing and leak repair using injection and chemical grout; leak repair with hydrophobic grout or hydraulic cement; and installation of coalescent packs and filters in concrete structures. We coordinate access, sequencing, confined-space logistics, quality control, and clear communication around each project."
+};
+const description = details[service?.title || ""] || service?.text || "";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={`${service?.title} services from WCCL Systems.`} />
+    <title>{service?.title} | WCCL Systems</title>
+    <style>
+      .service-page { min-height: 100vh; background: #f3f0e9; }
+      .service-hero { min-height: 58vh; display: grid; align-items: end; padding: 8rem 0 4rem; color: #fff; background-position: center; background-size: cover; }
+      .service-hero h1 { max-width: 780px; margin: .5rem 0 0; font-size: clamp(2.8rem, 7vw, 6.5rem); line-height: .95; }
+      .service-content { max-width: 820px; padding: 5rem 1.5rem 6rem; }
+      .service-content p { font-size: 1.32rem; line-height: 1.8; color: #385355; max-width: 760px; }
+      .service-content .source-note { font-size: .92rem; line-height: 1.5; margin-top: 3rem; color: #607778; }
+      .service-actions { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 2rem; }
+      .service-actions a { display: inline-block; padding: .9rem 1.2rem; border: 1px solid #16494a; color: #16494a; text-decoration: none; }
+      .service-actions a:first-child { background: #16494a; color: #fff; }
+    </style>
+  </head>
+  <body>
+    <main class="service-page">
+      <section class="service-hero" style={"background-image: linear-gradient(90deg, rgba(12,45,47,.92), rgba(12,45,47,.45)), url('" + assetUrl(service?.image || "") + "')"}><div class="container"><a class="text-link light" href="/">← Back to WCCL Systems</a><p class="eyebrow light">WCCL Systems services</p><h1>{service?.title}</h1></div></section>
+      <section class="container service-content">
+        <p>{description}</p>
+        <p class="source-note">Technical context: <a href="https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P1008C45.TXT" target="_blank" rel="noreferrer">EPA wastewater rehabilitation guidance</a>, <a href="https://www.plasticpipe.org/common/Uploaded%20files/Technical/PPI%20TN-70.pdf" target="_blank" rel="noreferrer">Plastics Pipe Institute HDPE fusion guidance</a>, and <a href="https://www.uni-bell.org/Portals/0/ResourceFile/uni-b-15-10.pdf" target="_blank" rel="noreferrer">Uni-Bell PVC fabrication guidance</a>.</p>
+        <div class="service-actions"><a href="/" >View all services</a><a href="/#contact">Discuss your project →</a></div>
+      </section>
+    </main>
+  </body>
+</html>
+---
+import "../../styles/global.css";
+import site from "../../data/site.json";
+
+const { slug } = Astro.params;
+const slugify = (title: string) => title.toLowerCase().replace(/&/g, "and").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+export function getStaticPaths() {
+  const makeSlug = (title: string) => title.toLowerCase().replace(/&/g, "and").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+  return site.services.map((service) => ({ params: { slug: makeSlug(service.title) } }));
+}
+const service = site.services.find((item) => slugify(item.title) === slug);
+if (!service) Astro.redirect("/");
+const assetUrl = (path: string) => path.startsWith("http") ? path : `${import.meta.env.BASE_URL}${path.replace(/^\//, "")}`;
+const details: Record<string, string> = {
+  "Concrete Lining": "Concrete lining creates a protective barrier between the host structure and the environment around it. WCCL evaluates exposure to wastewater, chemicals, moisture, abrasion, and changing service conditions; prepares the substrate; and coordinates lining application and inspection to the project requirements. WCCL provides CAS-certified applicator services for Raven 405 systems, including GU-certified manhole modifications. Proper cleaning, sound-substrate preparation, bond, thickness, and holiday control are central to long-term performance.",
+  "Concrete Waterproofing": "Waterproofing is a system decision, not simply a surface treatment. We assess active leaks, hydrostatic pressure, joints, penetrations, cracks, and access constraints before recommending a practical approach for tanks, vaults, wet wells, and other concrete infrastructure. The goal is to control infiltration and exfiltration while protecting the concrete and maintaining a serviceable, inspectable interior.",
   "Concrete Structure Repair": "Concrete repair begins with understanding why the structure deteriorated. WCCL supports condition review, removal of unsound material, repair of defects, and rehabilitation of surfaces before protective coatings or liners are installed. This includes concrete rehabilitation for grease traps and related utility structures where chemical exposure, abrasion, infiltration, and difficult access can accelerate deterioration. We coordinate the repair sequence around structural needs, confined-space requirements, active facilities, access, curing, and the owner’s long-term maintenance goals.",
   "Inspections and Testing": "A useful inspection records more than what is visible on the day of the visit. We document concrete condition, cracking, spalling, corrosion indicators, infiltration, coating or liner defects, joints, penetrations, and access limitations with photographs and organized field notes. WCCL also provides manhole vacuum testing, manhole joint testing, and sewer-line testing to help verify structure and line performance, identify potential infiltration or leakage, and support rehabilitation decisions. This information helps owners and engineers prioritize repairs, compare alternatives, and plan work around operating constraints.",
   "HDPE Welding": "HDPE butt fusion joins prepared pipe ends by heating, aligning, pressing, and cooling them into a homogeneous connection. WCCL plans the work around material compatibility, alignment, heater and equipment setup, bead formation, cooling time, access, and visual inspection. The finished work is intended to provide a durable, corrosion-resistant connection for piping, liners, and related systems when the specified procedure is followed.",

@@ -27,7 +27,7 @@
   "services": [
     { "title": "Concrete Lining", "text": "Protective lining systems designed for structures exposed to water, chemicals, abrasion, and demanding service conditions. CAS-certified applicator services for Raven 405 systems, including GU-certified manhole modifications.", "image": "/images/wccl/img_2922.jpg" },
     { "title": "Concrete Waterproofing", "text": "Solutions designed to control water intrusion and protect concrete from long-term moisture exposure.", "image": "/images/wccl/img_5061.jpg" },
-    { "title": "Concrete Structure Repair", "text": "Rehabilitation and repair of damaged or deteriorated concrete—including grease traps and related utility structures—to restore performance and extend service life.", "image": "/images/wccl/img_6637.jpg" },
+    { "title": "Concrete Structure Repair", "text": "Rehabilitation and repair of damaged or deteriorated concrete—including grease traps and related utility structures—to restore performance and extend service life. Chemical grouting for soil support and concrete structural support.", "image": "/images/wccl/img_6637.jpg" },
     { "title": "Inspections and Testing", "text": "Condition assessments, manhole vacuum testing, manhole joint testing, and sewer-line testing to document existing conditions and help determine appropriate rehabilitation.", "image": "https://images.unsplash.com/photo-1777919393730-463e2c0b7f4c?auto=format&fit=crop&w=900&q=82" },
     { "title": "HDPE Welding", "text": "HDPE fusion and welding services for durable, corrosion-resistant piping, liners, and related systems.", "image": "https://images.unsplash.com/photo-1716031112197-db7e3e1e232e?auto=format&fit=crop&w=900&q=82" },
     { "title": "PVC Welding", "text": "PVC welding and fabrication support for applications requiring corrosion-resistant polymer components.", "image": "https://images.unsplash.com/photo-1764524331704-c7a0d17067dd?auto=format&fit=crop&w=900&q=82" },
@@ -60,7 +60,9 @@
     { "image": "/images/wccl/h2s-repair-02.jpg", "alt": "H2S repair" },
     { "image": "/images/wccl/h2s-repair-03.jpg", "alt": "H2S repair" },
     { "image": "/images/wccl/floor-repair-01.jpg", "alt": "Flooring and repair" },
-    { "image": "/images/wccl/floor-repair-02.jpg", "alt": "Flooring and repair" }
+    { "image": "/images/wccl/floor-repair-02.jpg", "alt": "Flooring and repair" },
+    { "image": "/images/wccl/chemical-grouting-soil-support-01.jpg", "alt": "Chemical grouting for soil support and concrete structural support" },
+    { "image": "/images/wccl/chemical-grouting-soil-support-02.jpg", "alt": "Chemical grouting for soil support and concrete structural support" }
   ],
   "why": {
     "eyebrow": "Our Approach",

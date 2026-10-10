@@ -54,13 +54,13 @@
     { "image": "/images/wccl/img_6637.jpg", "alt": "Concrete rehabilitation work area" },
     { "image": "/images/wccl/img_7560.jpg", "alt": "Confined-space concrete structure" },
     { "image": "/images/wccl/img_9946.jpg", "alt": "Large lined infrastructure shaft" },
-    { "image": "/images/wccl/h2s-damage.jpg", "alt": "Concrete surface deterioration caused by hydrogen sulfide (H2S) exposure" },
-    { "image": "/images/wccl/floor-coating.jpg", "alt": "Finished industrial floor coating and painted concrete wall" },
-    { "image": "/images/wccl/h2s-repair-01.jpg", "alt": "H2S rehabilitation coating inside a concrete chamber" },
-    { "image": "/images/wccl/h2s-repair-02.jpg", "alt": "H2S rehabilitation around a repaired process-pipe connection" },
-    { "image": "/images/wccl/h2s-repair-03.jpg", "alt": "Coated concrete chamber during H2S repair work" },
-    { "image": "/images/wccl/floor-repair-01.jpg", "alt": "Finished industrial floor coating and wall repair" },
-    { "image": "/images/wccl/floor-repair-02.jpg", "alt": "Finished floor coating through an industrial work area" }
+    { "image": "/images/wccl/h2s-damage.jpg", "alt": "H2S damage to concrete" },
+    { "image": "/images/wccl/floor-coating.jpg", "alt": "Flooring and painting" },
+    { "image": "/images/wccl/h2s-repair-01.jpg", "alt": "H2S repair" },
+    { "image": "/images/wccl/h2s-repair-02.jpg", "alt": "H2S repair" },
+    { "image": "/images/wccl/h2s-repair-03.jpg", "alt": "H2S repair" },
+    { "image": "/images/wccl/floor-repair-01.jpg", "alt": "Flooring and repair" },
+    { "image": "/images/wccl/floor-repair-02.jpg", "alt": "Flooring and repair" }
   ],
   "why": {
     "eyebrow": "Our Approach",

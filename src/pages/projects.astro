@@ -1,0 +1,49 @@
+---
+import "../styles/global.css";
+import site from "../data/site.json";
+
+const assetUrl = (path: string) => path.startsWith("http") ? path : `${import.meta.env.BASE_URL}${path.replace(/^\//, "")}`;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Past projects and field inspections from WCCL Systems." />
+    <title>Project Gallery | WCCL Systems</title>
+    <style>
+      .projects-page { background:#f3f0e9; min-height:100vh; }
+      .projects-hero { padding:8rem 0 5rem; background:#0c2d2f; color:#fff; }
+      .projects-hero h1 { max-width:850px; margin:.5rem 0 1.25rem; font-size:clamp(3.2rem,8vw,7rem); }
+      .projects-hero p:last-child { max-width:680px; font-size:1.2rem; color:#d8e6df; }
+      .projects-content { padding:5rem 0 7rem; }
+      .projects-intro { max-width:700px; font-size:1.2rem; color:#385355; margin-bottom:3rem; }
+      .projects-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; }
+      .project-photo { margin:0; background:#dfe5e1; overflow:hidden; aspect-ratio:4/3; }
+      .project-photo img { width:100%; height:100%; object-fit:cover; transition:transform .45s; }
+      .project-photo:hover img { transform:scale(1.04); }
+      .project-photo figcaption { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); }
+      @media(max-width:820px){.projects-grid{grid-template-columns:repeat(2,1fr)}}
+      @media(max-width:560px){.projects-hero{padding:6rem 0 4rem}.projects-grid{grid-template-columns:1fr}}
+    </style>
+  </head>
+  <body>
+    <div class="projects-page">
+      <header class="projects-hero">
+        <div class="container">
+          <a class="text-link light" href="/">← Back to WCCL Systems</a>
+          <p class="eyebrow light">Past projects & inspections</p>
+          <h1>Work in the field.</h1>
+          <p>A selection of concrete structures, tanks, shafts, and lined systems documented by WCCL Systems. New project and inspection photos will be added here as they become available.</p>
+        </div>
+      </header>
+      <main class="container projects-content">
+        <p class="projects-intro">These images show the environments our crews work in every day—from confined-space inspections to waterproofed tanks and rehabilitated concrete structures.</p>
+        <div class="projects-grid">
+          {site.gallery.map((item) => <figure class="project-photo"><img src={assetUrl(item.image)} alt={item.alt} loading="lazy" /><figcaption>{item.alt}</figcaption></figure>)}
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

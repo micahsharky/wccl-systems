@@ -25,13 +25,15 @@
     ]
   },
   "services": [
-    { "title": "Concrete Lining", "text": "Protective lining systems designed for structures exposed to water, chemicals, abrasion, and demanding service conditions.", "image": "/images/wccl/img_2922.jpg" },
+    { "title": "Concrete Lining", "text": "Protective lining systems designed for structures exposed to water, chemicals, abrasion, and demanding service conditions. CAS-certified applicator services for Raven 405 systems, including GU-certified manhole modifications.", "image": "/images/wccl/img_2922.jpg" },
     { "title": "Concrete Waterproofing", "text": "Solutions designed to control water intrusion and protect concrete from long-term moisture exposure.", "image": "/images/wccl/img_5061.jpg" },
     { "title": "Concrete Structure Repair", "text": "Rehabilitation and repair of damaged or deteriorated concrete—including grease traps and related utility structures—to restore performance and extend service life.", "image": "/images/wccl/img_6637.jpg" },
-    { "title": "Inspection Services", "text": "Condition assessments and inspection support to document existing conditions and help determine appropriate rehabilitation.", "image": "https://images.unsplash.com/photo-1777919393730-463e2c0b7f4c?auto=format&fit=crop&w=900&q=82" },
+    { "title": "Inspections and Testing", "text": "Condition assessments, manhole vacuum testing, manhole joint testing, and sewer-line testing to document existing conditions and help determine appropriate rehabilitation.", "image": "https://images.unsplash.com/photo-1777919393730-463e2c0b7f4c?auto=format&fit=crop&w=900&q=82" },
     { "title": "HDPE Welding", "text": "HDPE fusion and welding services for durable, corrosion-resistant piping, liners, and related systems.", "image": "https://images.unsplash.com/photo-1716031112197-db7e3e1e232e?auto=format&fit=crop&w=900&q=82" },
     { "title": "PVC Welding", "text": "PVC welding and fabrication support for applications requiring corrosion-resistant polymer components.", "image": "https://images.unsplash.com/photo-1764524331704-c7a0d17067dd?auto=format&fit=crop&w=900&q=82" },
-    { "title": "Special Civil Services", "text": "Specialized civil construction support including concrete coring under 24 inches, concrete grouting, pipe testing, saw cutting, and installation of coalescent packs. We coordinate access, sequencing, confined-space logistics, and field execution around the needs of each infrastructure project.", "image": "/images/wccl/img_6606.jpg" }
+    { "title": "Special Civil Services", "text": "HDPE and fiberglass manhole welding, certified Predl repairs, GU-certified manhole modifications, channel installation and modification, coring and channel rehabilitation, manhole vacuum testing, sewer-line testing, extrusion-welding testing, grouting, leak repair, and coalescent-pack and filter installation.", "image": "/images/wccl/img_6606.jpg" },
+    { "title": "Manhole Channeling", "text": "Manhole channel installation, modification, and rehabilitation to improve flow, restore damaged surfaces, and extend the service life of wastewater structures.", "image": "/images/wccl/h2s-repair-03.jpg" },
+    { "title": "Floor, Coating, and Architectural Painting", "text": "Durable floor coatings, protective concrete coatings, and architectural painting systems for industrial, commercial, and infrastructure environments.", "image": "/images/wccl/floor-repair-01.jpg" }
   ],
   "gallery": [
     { "image": "/images/wccl/img_2825.jpg", "alt": "Coated concrete structure with access ladder" },
@@ -51,7 +53,14 @@
     { "image": "/images/wccl/img_6606.jpg", "alt": "Industrial concrete structure" },
     { "image": "/images/wccl/img_6637.jpg", "alt": "Concrete rehabilitation work area" },
     { "image": "/images/wccl/img_7560.jpg", "alt": "Confined-space concrete structure" },
-    { "image": "/images/wccl/img_9946.jpg", "alt": "Large lined infrastructure shaft" }
+    { "image": "/images/wccl/img_9946.jpg", "alt": "Large lined infrastructure shaft" },
+    { "image": "/images/wccl/h2s-damage.jpg", "alt": "Concrete surface deterioration caused by hydrogen sulfide (H2S) exposure" },
+    { "image": "/images/wccl/floor-coating.jpg", "alt": "Finished industrial floor coating and painted concrete wall" },
+    { "image": "/images/wccl/h2s-repair-01.jpg", "alt": "H2S rehabilitation coating inside a concrete chamber" },
+    { "image": "/images/wccl/h2s-repair-02.jpg", "alt": "H2S rehabilitation around a repaired process-pipe connection" },
+    { "image": "/images/wccl/h2s-repair-03.jpg", "alt": "Coated concrete chamber during H2S repair work" },
+    { "image": "/images/wccl/floor-repair-01.jpg", "alt": "Finished industrial floor coating and wall repair" },
+    { "image": "/images/wccl/floor-repair-02.jpg", "alt": "Finished floor coating through an industrial work area" }
   ],
   "why": {
     "eyebrow": "Our Approach",

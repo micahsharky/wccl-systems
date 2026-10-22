@@ -1,11 +1,10 @@
 ---
 import "../styles/global.css";
-import site from "../data/site.json";
-const heroImage = "/images/wccl/img_9946.jpg";
+const heroStyle = "background-image: linear-gradient(90deg, rgba(12,45,47,.88), rgba(12,45,47,.38)), url('/images/wccl/about-us.jpg')";
 const paragraphs = [
-  "In the 1970s, Marc Valdes was working in the field as a sewer concrete installer when he began to recognize serious challenges facing sewer infrastructure throughout the Pacific Northwest. Problems with infiltration, poor workmanship, and limited solutions for repairing leaks in concrete structures created a need for a better approach to sewer construction and rehabilitation.",
-  "In 1980, Marc founded his company with a clear mission: to build and rehabilitate sanitary sewer infrastructure capable of withstanding the harsh environmental conditions of the Pacific Northwest. From the beginning, his approach centered on uncompromising quality control, innovative repair solutions, and an unwavering commitment to customer service.",
-  "For more than four decades, Marc has developed and delivered solutions for some of the most challenging concrete deterioration and rehabilitation projects at wastewater treatment facilities throughout the region. By collaborating with waterproofing manufacturers and suppliers, he has helped develop specialized injection and coating products designed to stop leaks, protect concrete structures, and prevent premature infrastructure failure caused by hydrogen sulfide (H₂S) gas and high groundwater conditions.",
+  "In the 1980s, Marc Valdes was working in the field as a sewer concrete installer when he began to recognize serious challenges facing sewer infrastructure throughout the Pacific Northwest. Problems with infiltration, poor workmanship, and limited solutions for repairing leaks in concrete structures created a need for a better approach to sewer construction and rehabilitation.",
+  "In 1996, Marc founded his company with a clear mission: to build and rehabilitate sanitary sewer infrastructure capable of withstanding the harsh environmental conditions of the Pacific Northwest. From the beginning, his approach centered on uncompromising quality control, innovative repair solutions, and an unwavering commitment to customer service.",
+  "For nearly three decades, Marc has developed and delivered solutions for some of the most challenging concrete deterioration and rehabilitation projects at wastewater treatment facilities throughout the region. By collaborating with waterproofing manufacturers and suppliers, he has helped develop specialized injection and coating products designed to stop leaks, protect concrete structures, and prevent premature infrastructure failure caused by hydrogen sulfide (H₂S) gas and high groundwater conditions.",
   "Marc’s dedication to quality workmanship, dependable solutions, and exceptional customer service has helped establish WCCL Systems as a leading concrete rehabilitation contractor in the Pacific Northwest. Having installed about 1,000,000 square feet of Raven 405, Marc continues to build on that legacy, with a commitment to delivering millions of additional square feet of rehabilitation over the next decade.",
   "Today, Marc partners with his son, Andrew Valdes, to carry that mission forward. Andrew brings expertise in emerging technologies and a hands-on approach to customer service, working directly in the field to support clients, solve problems, and help ensure successful project outcomes.",
   "Together, Marc and Andrew combine decades of construction experience, technical innovation, and personal customer service to serve wastewater agencies and infrastructure owners throughout the Pacific Northwest. Their shared commitment to quality, accountability, and long-term customer relationships continues to set a high standard in the wastewater rehabilitation industry.",
@@ -17,6 +16,7 @@ const paragraphs = [
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="description" content="The Marc Valdes legacy behind WCCL Systems." />
     <title>About Us | WCCL Systems</title>
     <style>
@@ -29,7 +29,7 @@ const paragraphs = [
   </head>
   <body>
     <main>
-      <section class="about-hero"><div class="container"><a class="text-link light" href="/">← Back to WCCL Systems</a><p class="eyebrow light">Owner &amp; Founder</p><h1>Marc Valdes: A Legacy of Quality, Innovation, and Customer Service</h1></div></section>
+      <section class="about-hero" style={heroStyle}><div class="container"><a class="text-link light" href="/">← Back to WCCL Systems</a><p class="eyebrow light">Owner &amp; Founder</p><h1>Marc Valdes: A Legacy of Quality, Innovation, and Customer Service</h1></div></section>
       <section class="container about-body">
         {paragraphs.map((paragraph, index) => <p class:list={{ closing: index === paragraphs.length - 1 }}>{paragraph}</p>)}
       </section>

@@ -74,5 +74,6 @@
     "text": "Planning a concrete rehabilitation, lining, waterproofing, inspection, HDPE, or PVC welding project? Contact WCCL Systems to discuss your scope, site conditions, schedule, and project requirements.",
     "image": "https://images.unsplash.com/photo-1622322977767-2c71d1787205?auto=format&fit=crop&w=2200&q=84"
   },
-  "address": { "line1": "4008 Elwood Drive", "line2": "University Place, WA 98366" }
+  "address": { "line1": "4008 Elwood Drive", "line2": "University Place, WA 98366" },
+  "physicalAddress": { "line1": "2203 Inter Ave Suite A", "line2": "Puyallup, WA 98372" }
 }

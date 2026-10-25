@@ -120,7 +120,7 @@ const contactStyle = `background-image: url('${assetUrl(site.contact.image)}')`;
           </div>
           <div class="contact-details">
             <p class="eyebrow light">Contact details</p>
-            <p>WCCL Systems<br />{site.address.line1}<br />{site.address.line2}</p>
+            <div class="address-list"><p><strong>Mailing Address</strong><br />WCCL Systems<br />{site.address.line1}<br />{site.address.line2}</p><p><strong>Physical Address</strong><br />WCCL Systems<br />{site.physicalAddress.line1}<br />{site.physicalAddress.line2}</p></div>
             <p><a href={`tel:${site.phoneLink}`}>{site.phone}</a><br /><a href={`mailto:${site.email}`}>{site.email}</a></p>
             <p><strong>Inspector</strong><br />David Overland<br /><a href="tel:+12533101186">253-310-1186</a></p><p><strong>Business Estimator</strong><br />Justin Thornton<br /><a href="tel:+12069196907">206-919-6907</a></p>
             <p><strong>Owner &amp; Founder</strong><br />Marc Valdes<br /><a href="tel:+12536064964">253-606-4964</a></p>
@@ -147,7 +147,7 @@ const contactStyle = `background-image: url('${assetUrl(site.contact.image)}')`;
           <p>Minority Business Enterprise (MBE)</p>
           <p><a href={site.linkedin} target="_blank" rel="noreferrer">LinkedIn</a> · <a href={site.facebook} target="_blank" rel="noreferrer">Facebook</a></p>
         </div>
-        <div><h3>Headquarters</h3><p>WCCL Systems<br />{site.address.line1}<br />{site.address.line2}</p><p><a href={`tel:${site.phoneLink}`}>{site.phone}</a><br /><a href={`mailto:${site.email}`}>{site.email}</a></p><h3>Inspector</h3><p>David Overland<br /><a href="tel:+12533101186">253-310-1186</a></p><h3>Business Estimator</h3><p>Justin Thornton<br /><a href="tel:+12069196907">206-919-6907</a></p></div>
+        <div><h3>Addresses</h3><p><strong>Mailing Address</strong><br />WCCL Systems<br />{site.address.line1}<br />{site.address.line2}</p><p><strong>Physical Address</strong><br />WCCL Systems<br />{site.physicalAddress.line1}<br />{site.physicalAddress.line2}</p><p><a href={`tel:${site.phoneLink}`}>{site.phone}</a><br /><a href={`mailto:${site.email}`}>{site.email}</a></p><h3>Inspector</h3><p>David Overland<br /><a href="tel:+12533101186">253-310-1186</a></p><h3>Business Estimator</h3><p>Justin Thornton<br /><a href="tel:+12069196907">206-919-6907</a></p></div>
         <div><h3>Services</h3><ul><li><a href="#services">Concrete Lining</a></li><li><a href="#services">Waterproofing</a></li><li><a href="#services">Structure Repair</a></li><li><a href="#services">Inspections and Testing</a></li><li><a href="#services">HDPE & PVC Welding</a></li><li><a href="/services/special-civil-services/">Special Civil Services</a></li></ul></div>
         <div><h3>Company</h3><ul><li><a href="/experience/">About WCCL Systems</a></li><li><a href="/projects/">Project Photos</a></li><li><a href="/safety/">Safety & Quality</a></li><li>WA L&amp;I UBI: <a href={site.lni} target="_blank" rel="noreferrer">{site.ubi}</a></li><li><a href="#contact">Contact</a></li></ul></div>
       </div>

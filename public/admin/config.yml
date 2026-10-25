@@ -102,3 +102,9 @@ collections:
             fields:
               - { label: Street Address, name: line1, widget: string }
               - { label: "City, State, ZIP", name: line2, widget: string }
+          - label: Physical Address
+            name: physicalAddress
+            widget: object
+            fields:
+              - { label: Street Address, name: line1, widget: string }
+              - { label: "City, State, ZIP", name: line2, widget: string }
